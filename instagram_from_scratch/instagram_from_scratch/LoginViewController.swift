@@ -42,7 +42,7 @@ class LoginViewController: UIViewController {
             if user != nil {
                 print("YAy you succellly logged in")
                 
-                self.remainInfo.text = "You've signed up and will be signed in automatically......"
+                
                 
                 let triggerTime = (Int64(NSEC_PER_SEC) * 3)
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, triggerTime), dispatch_get_main_queue(), { () -> Void in
@@ -65,6 +65,8 @@ class LoginViewController: UIViewController {
         newUser.signUpInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
             if success {
                 print("successfully signed up")
+                
+                self.remainInfo.text = "You've signed up and will be signed in automatically......"
                 self.loginButtonPressed(self)
             } else {
                 print(error?.localizedDescription)

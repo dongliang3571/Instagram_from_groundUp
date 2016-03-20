@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3BA5ADAB1C9E5C1B004547E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5ADAA1C9E5C1B004547E7 /* HomeViewController.swift */; };
 		3BA5ADAE1C9E66FC004547E7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5ADAD1C9E66FC004547E7 /* Post.swift */; };
+		3BA5ADB01C9F22A2004547E7 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5ADAF1C9F22A2004547E7 /* PostViewController.swift */; };
+		3BA5ADB31C9F3B2A004547E7 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5ADB21C9F3B2A004547E7 /* DetailTableViewCell.swift */; };
 		3BBD935B1C99DFB10037F434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBD935A1C99DFB10037F434 /* AppDelegate.swift */; };
 		3BBD935D1C99DFB10037F434 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBD935C1C99DFB10037F434 /* ViewController.swift */; };
 		3BBD93601C99DFB10037F434 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBD935E1C99DFB10037F434 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		2BB291FE3114D9D0AAA31DFC /* Pods_instagram_from_scratch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagram_from_scratch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA5ADAA1C9E5C1B004547E7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3BA5ADAD1C9E66FC004547E7 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		3BA5ADAF1C9F22A2004547E7 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		3BA5ADB21C9F3B2A004547E7 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		3BBD93571C99DFB10037F434 /* instagram_from_scratch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram_from_scratch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBD935A1C99DFB10037F434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BBD935C1C99DFB10037F434 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +75,14 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		3BA5ADB11C9F3B0A004547E7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3BA5ADB21C9F3B2A004547E7 /* DetailTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		3BBD934E1C99DFB10037F434 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +104,7 @@
 		3BBD93591C99DFB10037F434 /* instagram_from_scratch */ = {
 			isa = PBXGroup;
 			children = (
+				3BA5ADB11C9F3B0A004547E7 /* Cells */,
 				3BA5ADAC1C9E62ED004547E7 /* Models */,
 				3BBD936F1C9B3D6E0037F434 /* ViewControllers */,
 				3BBD935A1C99DFB10037F434 /* AppDelegate.swift */,
@@ -109,6 +122,7 @@
 			children = (
 				3BBD93721C9B3DC90037F434 /* LoginViewController.swift */,
 				3BA5ADAA1C9E5C1B004547E7 /* HomeViewController.swift */,
+				3BA5ADAF1C9F22A2004547E7 /* PostViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -236,7 +250,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA5ADB01C9F22A2004547E7 /* PostViewController.swift in Sources */,
 				3BBD93731C9B3DC90037F434 /* LoginViewController.swift in Sources */,
+				3BA5ADB31C9F3B2A004547E7 /* DetailTableViewCell.swift in Sources */,
 				3BBD935D1C99DFB10037F434 /* ViewController.swift in Sources */,
 				3BBD935B1C99DFB10037F434 /* AppDelegate.swift in Sources */,
 				3BA5ADAB1C9E5C1B004547E7 /* HomeViewController.swift in Sources */,
